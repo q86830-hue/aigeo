@@ -1,22 +1,6 @@
-# Dependencies
-node_modules/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-
-# Virtual environments
-venv/
-env/
-ENV/
-.venv/
-
-# Environment variables
-.env
-.env.local
-.env.*.local
+# OS
+.DS_Store
+Thumbs.db
 
 # IDE
 .vscode/
@@ -25,23 +9,30 @@ ENV/
 *.swo
 *~
 
-# OS
-.DS_Store
-Thumbs.db
-
 # Logs
 *.log
-logs/
 
-# Build outputs
-dist/
-build/
-*.egg-info/
+# Local development files (not for open source)
+.env
+.env.local
+.env.*.local
 
 # Coze platform files (platform-specific, not part of open source)
 .coze
 
-# Local development files (not for open source)
+# Original Coze-dependent source code (kept local, not open source)
+src/
+config/
+scripts/
+requirements.txt
+.env.template
+
+# Standalone agent files (personal use only, not open source)
+standalone_*.py
+standalone_*.json
+requirements.standalone.txt
+
+# Documentation files (local only)
 STANDALONE_GUIDE.md
 PROMPT_DIRECT_USE.md
 PROMPT_OPTIMIZATION.md
@@ -51,19 +42,6 @@ WRITING_AGENT_GUIDE.md
 GITHUB_PUBLISH_GUIDE.md
 MARKETING.md
 WRITING_AGENT_*.md
-
-# Standalone agent files (personal use only, not open source)
-standalone_*.py
-standalone_*.json
-requirements.standalone.txt
-.env.template
-
-# Original Coze-dependent files (kept local, not open source)
-src/main.py
-agents/agent.py
-tools/hotspot_search_tool.py
-tools/document_export_tool.py
-config/agent_llm_config.json
 
 # Test outputs
 output/
